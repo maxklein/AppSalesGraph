@@ -49,8 +49,6 @@ class MainFrame(wx.Frame):
     
     def ConfigureMenus(self):
         menu = wx.Menu()
-       #  menu.Append(wx.ID_ADD, "&Add event", "Add a new event")
-       # menu.AppendSeparator()
         
         ID_IMPORT = wx.NewId()
         menu.Append(ID_IMPORT, "&Import sales files...", "Open")
