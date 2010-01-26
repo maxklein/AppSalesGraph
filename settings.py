@@ -24,6 +24,7 @@ from pyDes import *
 import sys, os, wx
 from datetime import datetime
 from datetime import date
+from currency import ExchangeRate
 
 locale.setlocale(locale.LC_ALL, '')
 
@@ -103,6 +104,8 @@ def do_one_time_debug_init():
     if not loc[len(loc)-1] == "/":
         loc = loc + "/"
 
+    # Load currentcy file
+    ExchangeRate.get("USD")
     
 def format_currency(val):
     return "$" + str(round(val, 2))

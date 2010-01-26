@@ -43,9 +43,10 @@ class ExchangeRate(object):
 	@classmethod
 	def save_currencies(cls):
 		try:
-			file = open(settings.DataDir("currencies.key"), "wb") # write mode
-			file.write(pickle.dumps(ExchangeRate.currencies, 2))
-			file.close()
+			if not ExchangeRate.currencies is None:
+				file = open(settings.DataDir("currencies.key"), "wb") # write mode
+				file.write(pickle.dumps(ExchangeRate.currencies, 2))
+				file.close()
 		except:
 			settings.log("Could not save currency data. Will try again on restart")
 			
