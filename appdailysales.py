@@ -193,6 +193,40 @@ def downloadFile(options, notify_window, days_to_download):
     
     if html_lc.find("checkvendoridnumber") > 0:
         # Oh, oh, we have a multiple vendor login
+        
+        soup = BeautifulSoup.BeautifulSoup( html )
+        
+        # Let's get all vendor IDs
+        print html
+        selectField = soup.find( 'select', attrs={'id': 'selectName'} )
+        options = selectField.findAll('option')
+        for option in options:
+            val = option['value']
+            print val
+            if val == "0": continue
+            
+            # Get the url to post to
+            form = soup.find( 'form', attrs={'name': 'superPage' } )
+            urlSelectVendor = urlBase % form['action']
+            wosid1 = soup.find( 'input', attrs={'name': 'wosid'} )['value']
+            # countryName = soup.find( 'input', attrs={'id': 'hiddenCountryName'} )['value']
+            
+            vendorSelectData = urllib.urlencode({val:'vndrid', wosid1:'wosid'})
+            
+            html = readHtml(opener, urlSelectVendor, vendorSelectData)
+            print "1 --------------------"
+            print html
+            
+            soup = BeautifulSoup.BeautifulSoup( html )
+            form = soup.find( 'form', attrs={'name': 'superPage' } )
+            wosid2 = soup.find( 'input', attrs={'name': 'wosid'} )['value']
+            urlSelectVendor2 = urlBase % form['action']
+            vendorSelectData = urllib.urlencode({val:'vndrid', wosid2:'wosid'})
+            html = readHtml(opener, urlSelectVendor2, vendorSelectData)
+            
+            print "2 --------------------"
+            print html
+
         wx.PostEvent(notify_window, ResultEvent("SalesDownloadError: Multiple Vendors not supported"))
         return [], True
             
