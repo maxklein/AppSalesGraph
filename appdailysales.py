@@ -191,6 +191,11 @@ def downloadFile(options, notify_window, days_to_download):
         wx.PostEvent(notify_window, ResultEvent("SalesDownloadError: Could not login"))
         return [], True
     
+    if html_lc.find("checkvendoridnumber") > 0:
+        # Oh, oh, we have a multiple vendor login
+        wx.PostEvent(notify_window, ResultEvent("SalesDownloadError: Multiple Vendors not supported"))
+        return [], True
+            
     if shutDownSalesDownload == True: return None, None
     
     # Get the form field names needed to download the report.
