@@ -10,3 +10,15 @@ Get python installed. Run the .bat file
 Running on mac
 --------------
 Get python installed. 
+
+
+Compiling on Mac
+----------------
+* Install Python on your Mac if necessary. The default python that comes with mac does not let numpy install, so better off installing it yourself. Get from python.org
+* Install Eclipse
+* Install PyDev for Eclipse
+* Import the project into Eclipse
+* Start off by installing numpy. If it does not install, then get and install the official python and don't use the apple one
+* Then download matplotlib. Be sure to expand the files and search for dmg otherwise your will waste your time
+* Download and install wxPython
+* All this stuff will be using your new python, and eclipse is likely using the default python. Open eclipse and go select the new python you installed at a location like /Library/Frameworks/Python.framework/Versions/2.6/bin
