@@ -5,7 +5,7 @@
 #
 # See the file "LICENSE" for information on usage and redistribution
 # of this file, and for a DISCLAIMER OF ALL WARRANTIES.
-
+ 
 """
 Embedding matplotlib in wxPython applications is straightforward, but the
 default plotting widget lacks the capabilities necessary for interactive use.

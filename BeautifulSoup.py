@@ -108,7 +108,7 @@ def sob(unicode, encoding):
     """Returns either the given Unicode string or its encoding."""
     if encoding is None:
         return unicode
-    else:
+    else: 
         return unicode.encode(encoding)
 
 class PageElement:

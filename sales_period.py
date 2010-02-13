@@ -7,7 +7,7 @@
 # version 2.1 of the License, or (at your option) any later version.
 
 
-
+ 
 from currency      import convert_currency_to_usd
 from UnicodeReader import UnicodeReader
 from matplotlib    import dates as mdates

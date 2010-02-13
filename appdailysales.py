@@ -52,7 +52,7 @@
 
 # -- Change the following to match your credentials --
 # -- or use the command line options.               --
-appleId = 'Your Apple Id'
+appleId = 'Your Apple Id' 
 password = 'Your Password'
 outputDirectory = ''
 unzipFile = False

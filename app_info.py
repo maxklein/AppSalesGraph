@@ -1,6 +1,5 @@
 import xml.sax
 
-
 # AppSalesGraph: AppStore Sales Graphing
 # Copyright (c) 2010 by Max Klein (maximusklein@gmail.com)
 #

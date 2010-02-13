@@ -13,7 +13,7 @@ import pickle
 import settings
 
 from dateutil.parser import *
-
+ 
 
 class ExchangeRate(object):
 	

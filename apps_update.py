@@ -14,7 +14,7 @@ import urllib2
 from threading import Thread
 from BeautifulSoup import BeautifulSoup	 
 import xml.sax
-import pprint
+import pprint 
 import urllib
 import appdailysales
 import wx

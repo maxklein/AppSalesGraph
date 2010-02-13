@@ -6,7 +6,7 @@
 # License as published by the Free Software Foundation; either
 # version 2.1 of the License, or (at your option) any later version.
 
-
+ 
 import random, sys, locale
 import matplotlib.dates as mdates
 import wx.lib.masked as masked

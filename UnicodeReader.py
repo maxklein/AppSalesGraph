@@ -7,7 +7,7 @@
 # version 2.1 of the License, or (at your option) any later version.
 
 import csv, codecs, cStringIO
-
+ 
 class UTF8Recoder:
     """
     Iterator that reads an encoded stream and reencodes the input to UTF-8
