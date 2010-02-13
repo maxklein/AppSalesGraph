@@ -9,8 +9,7 @@
 
 import sys, wx, settings
 
-# sys.stderr = open("salesgraph_stderr.log", "w")
- 
+
 class SalesGraphApp(wx.App):
 	def OnInit(self):
 	
