@@ -1,7 +1,7 @@
-AppSalesGraph - Initial GPL release
+AppSalesGraph - LGPL
 Max Klein: maximusklein@gmail.com
 Twitter: http://www.twitter.com/maxklein
-Website: http://maxklein.github.com/AppSalesGraph/
+Website: http://www.CubeOfM.com/salesgraph/
 
 Running on windows
 ------------------
@@ -9,7 +9,9 @@ Get python installed. Run the .bat file
 
 Running on mac
 --------------
+Best thing to do is to visit the website and get the pre-compiled package
 Get python installed. 
+
 
 
 Compiling on Mac

@@ -1,2 +1,2 @@
 python salesgraph.py -B
-pause
+pause 
