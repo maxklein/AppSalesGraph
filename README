@@ -1,18 +1,15 @@
-AppSalesGraph - LGPL
+AppSalesGraph - LGPL software to graph the sales of your iPhone App Store products
 Max Klein: maximusklein@gmail.com
 Twitter: http://www.twitter.com/maxklein
 Website: http://www.CubeOfM.com/salesgraph/
 
 Running on windows
 ------------------
-Get python installed. Run the .bat file
+Visit the website (http://www.CubeOfM.com/salesgraph/) and download the prepackaged and precompiled version
 
 Running on mac
 --------------
-Best thing to do is to visit the website and get the pre-compiled package
-Get python installed. 
-
-
+Visit the website (http://www.CubeOfM.com/salesgraph/) and download the prepackaged and precompiled version
 
 Compiling on Mac
 ----------------
@@ -24,3 +21,12 @@ Compiling on Mac
 * Then download matplotlib. Be sure to expand the files and search for dmg otherwise your will waste your time
 * Download and install wxPython
 * All this stuff will be using your new python, and eclipse is likely using the default python. Open eclipse and go select the new python you installed at a location like /Library/Frameworks/Python.framework/Versions/2.6/bin
+
+
+Compiling on Windows
+--------------------
+* Install Eclipse and Pydev
+* Import Project
+* Install matplotlib
+* Install wxPython
+* Run
